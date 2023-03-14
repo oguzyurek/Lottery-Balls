@@ -29,6 +29,8 @@ class Lottery extends Component {
     return (
       <div className="lottery">
         <h1>{this.props.title}</h1>
+        <h3>Max Balls: {this.props.maxBalls}</h3>
+        <h3>Numbers: 1-{this.props.maxNum}</h3>
         <div>
           {this.state.nums.map((n) => (
             <Ball num={n} />
